@@ -12,9 +12,9 @@ export default function Location(props) {
 
       <div className="flex items-center justify-center">
         <h1 className="text-2xl font-normal">
-          {props.location}
-          {/* {stats.country ? ", " : "-"}
-          {stats.country} */}
+          {props.city ?? ""}
+          {props.country ? ", " : "-"}
+          {props.country ?? ""}
         </h1>
       </div>
     </section>
