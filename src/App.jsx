@@ -30,24 +30,24 @@ export default function App() {
     };
   }, [location]);
 
-  // function handleInput(event) {
-  //   setLocation(event.target.value);
-  // }
+  function handleInput(event) {
+    setLocation(event.target.value);
+  }
 
-  // const forecastDataMap = data?.list?.map((obj, i) => (
-  //   <Forecast key={i} obj={obj} />
-  // ));
+  const forecastDataMap = data?.list?.map((obj, i) => (
+    <Forecast key={i} obj={obj} />
+  ));
 
   return (
     <div className="main">
-      {/* <Location location={location} handleChange={handleInput} /> */}
+      <Location location={location} handleChange={handleInput} />
       <div className="today-and-forecast">
         <Today />
         <div className="forecast-section">
           <p className="hourlyforecast-heading">Hourly Forecast</p>
         </div>
         <hr className="hr" />
-        {/* <div className="forecast-map">{forecastDataMap}</div> */}
+        <div className="forecast-map">{forecastDataMap}</div>
       </div>
     </div>
   );
