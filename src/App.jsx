@@ -22,9 +22,7 @@ export default function App() {
     }
 
     setTimeoutID(setTimeout(() => fetchLocation(location), 1000));
-    return () => {
-      clearTimeout(timeoutID);
-    };
+    return () => clearTimeout(timeoutID);
   }, [location]);
 
   function handleInput(event) {
@@ -37,9 +35,9 @@ export default function App() {
 
   return (
     <div className="main">
-      <Location location={location} handleChange={handleInput} />
+      <Location location={location} handleChange={handleInput} data={data} />
       <div className="today-and-forecast">
-        <Today />
+        <Today data={data} />
         <div className="forecast-section">
           <p className="hourlyforecast-heading">Hourly Forecast</p>
         </div>

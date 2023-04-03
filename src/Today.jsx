@@ -3,7 +3,9 @@ import humidity from "./assets/humidity.png";
 import sunset from "./assets/sunset.png";
 import sunrise from "./assets/sunrise.png";
 
-export default function Today() {
+export default function Today(props) {
+  const { data } = props;
+
   return (
     <section className="weather-section">
       <div className="weather-description">
