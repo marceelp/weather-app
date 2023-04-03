@@ -34,7 +34,7 @@ export default function App() {
   ));
 
   return (
-    <div className="mx-auto m-10 px-10 py-10 w-16 bg-gradient-to-r from-cyan-500 to-blue-900 opacity-90 backdrop-blur-xl flex flex-col items-center text-white shadow-2xl rounded-lg">
+    <div className="w-1/3 mx-auto m-10 px-10 py-10 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-900 opacity-90 backdrop-blur-xl flex flex-col items-center text-white shadow-2xl">
       <Location location={location} handleChange={handleInput} data={data} />
       <div className="w-full">
         <Today data={data} />
