@@ -1,3 +1,6 @@
+import sunset from "./assets/sunset.png";
+import sunrise from "./assets/sunrise.png";
+
 export default function Today() {
   return (
     <section className="weather-section">
@@ -23,7 +26,7 @@ export default function Today() {
 
         <div className="weather-data">
           <div className="weather-feel">
-            {/* <Icon className="weather-icon" path={mdiWeatherSunsetUp} size={1} /> */}
+            <img src={sunrise} alt="Sunrise Icon" width="20px" height="20px" />
             <span className="weather-data-text">
               {/* {stats.feel} */}
               Real Feel
@@ -31,11 +34,7 @@ export default function Today() {
           </div>
 
           <div className="weather-humidity">
-            {/* <Icon
-              className="weather-icon"
-              path={mdiWeatherSunsetDown}
-              size={1}
-            /> */}
+            <img src={sunset} alt="Sunset Icon" width="20px" height="20px" />
             <span className="weather-data-text">
               {/* {stats.humidity} */}
               Humidity
@@ -46,7 +45,7 @@ export default function Today() {
 
       <div className="weather-info">
         <div className="weather-info-item">
-          {/* <Icon className="weather-icon" path={mdiWeatherSunsetUp} size={1} /> */}
+          <img src={sunrise} alt="Sunrise Icon" width="20px" height="20px" />
           <span className="weather-data-text">
             {/* {sunrise} */}
             Sunrise
@@ -54,7 +53,7 @@ export default function Today() {
         </div>
 
         <div className="weather-info-item">
-          {/* <Icon className="weather-icon" path={mdiWeatherSunsetDown} size={1} /> */}
+          <img src={sunset} alt="Sunset Icon" width="20px" height="20px" />
           <span className="weather-data-text">
             {/* {sunset} */}
             Sunset
