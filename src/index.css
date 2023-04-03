@@ -157,6 +157,12 @@ body {
   width: 7rem;
 }
 
+.small-weather-icon {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.4rem;
+}
+
 .weather-data {
   display: flex;
   flex-direction: column;

@@ -1,3 +1,5 @@
+import feel from "./assets/feel.png";
+import humidity from "./assets/humidity.png";
 import sunset from "./assets/sunset.png";
 import sunrise from "./assets/sunrise.png";
 
@@ -26,7 +28,7 @@ export default function Today() {
 
         <div className="weather-data">
           <div className="weather-feel">
-            <img src={sunrise} alt="Sunrise Icon" width="20px" height="20px" />
+            <img src={feel} alt="Real Feel" className="small-weather-icon" />
             <span className="weather-data-text">
               {/* {stats.feel} */}
               Real Feel
@@ -34,7 +36,7 @@ export default function Today() {
           </div>
 
           <div className="weather-humidity">
-            <img src={sunset} alt="Sunset Icon" width="20px" height="20px" />
+            <img src={humidity} alt="Humidity" className="small-weather-icon" />
             <span className="weather-data-text">
               {/* {stats.humidity} */}
               Humidity
@@ -45,7 +47,7 @@ export default function Today() {
 
       <div className="weather-info">
         <div className="weather-info-item">
-          <img src={sunrise} alt="Sunrise Icon" width="20px" height="20px" />
+          <img src={sunrise} alt="Sunrise" className="small-weather-icon" />
           <span className="weather-data-text">
             {/* {sunrise} */}
             Sunrise
@@ -53,7 +55,7 @@ export default function Today() {
         </div>
 
         <div className="weather-info-item">
-          <img src={sunset} alt="Sunset Icon" width="20px" height="20px" />
+          <img src={sunset} alt="Sunset" className="small-weather-icon" />
           <span className="weather-data-text">
             {/* {sunset} */}
             Sunset
