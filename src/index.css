@@ -19,7 +19,7 @@ body {
 /* ------------------------------- */
 
 .main {
-  width: 28rem;
+  min-width: 28rem;
   /* margin: 2rem auto;
   padding: 10px;
   background: linear-gradient(to right, #16a0b0, #1c2541);

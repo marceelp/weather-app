@@ -36,13 +36,15 @@ export default function App() {
   return (
     <div className="mx-auto m-10 px-10 py-10 w-16 bg-gradient-to-r from-cyan-500 to-blue-900 opacity-90 backdrop-blur-xl flex flex-col items-center text-white shadow-2xl rounded-lg">
       <Location location={location} handleChange={handleInput} data={data} />
-      <div className="today-and-forecast">
+      <div className="w-full">
         <Today data={data} />
-        <div className="forecast-section">
-          <p className="hourlyforecast-heading">Hourly Forecast</p>
+        <div className="flex items-center justify-start mt-6">
+          <p className="font-light">Hourly Forecast</p>
         </div>
-        <hr className="hr" />
-        <div className="forecast-map">{forecastDataMap}</div>
+        <hr className="my-2" />
+        <div className="flex justify-around items-start pt-1">
+          {forecastDataMap}
+        </div>
       </div>
     </div>
   );
