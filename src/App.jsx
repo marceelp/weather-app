@@ -1,33 +1,54 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { useState, useEffect } from "react";
 
-function App() {
-  const [count, setCount] = useState(0);
+import Location from "./Location";
+import Today from "./Today";
+import Forecast from "./Forecast";
+
+export default function App() {
+  // const [data, setData] = useState(null);
+  // const [location, setLocation] = useState("Hamburg");
+  // const [timeoutID, setTimeoutID] = useState("");
+
+  // useEffect(() => {
+  //   function fetchLocation(location) {
+  //     const api_key = "98262674b9d64b5afd8cc0a789919977";
+  //     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=metric&cnt=8&appid=${api_key}`;
+
+  //     fetch(url)
+  //       .then((response) => response.json())
+  //       .then((actualData) => {
+  //         setData(actualData);
+  //       });
+  //   }
+
+  //   const timeout = setTimeout(() => fetchLocation(location), 1000);
+
+  //   setTimeoutID(timeout);
+
+  //   return () => {
+  //     clearTimeout(timeoutID);
+  //   };
+  // }, [location]);
+
+  // function handleInput(event) {
+  //   setLocation(event.target.value);
+  // }
+
+  // const forecastDataMap = data?.list?.map((obj, i) => (
+  //   <Forecast key={i} obj={obj} />
+  // ));
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="main">
+      {/* <Location location={location} handleChange={handleInput} /> */}
+      <div className="today-and-forecast">
+        {/* <Today /> */}
+        <div className="forecast-section">
+          <p className="hourlyforecast-heading">Hourly Forecast</p>
+        </div>
+        <hr className="hr" />
+        {/* <div className="forecast-map">{forecastDataMap}</div> */}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   );
 }
-
-export default App;
