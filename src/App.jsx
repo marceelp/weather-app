@@ -42,7 +42,7 @@ export default function App() {
     <div className="main">
       {/* <Location location={location} handleChange={handleInput} /> */}
       <div className="today-and-forecast">
-        {/* <Today /> */}
+        <Today />
         <div className="forecast-section">
           <p className="hourlyforecast-heading">Hourly Forecast</p>
         </div>
