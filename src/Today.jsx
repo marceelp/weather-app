@@ -1,6 +1,3 @@
-import Icon from "@mdi/react";
-import { mdiWeatherSunsetUp, mdiWeatherSunsetDown } from "@mdi/js";
-
 export default function Today() {
   return (
     <section className="weather-section">
