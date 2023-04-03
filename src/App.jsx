@@ -5,9 +5,9 @@ import Today from "./Today";
 import Forecast from "./Forecast";
 
 export default function App() {
-  // const [data, setData] = useState(null);
-  // const [location, setLocation] = useState("Hamburg");
-  // const [timeoutID, setTimeoutID] = useState("");
+  const [data, setData] = useState(null);
+  const [location, setLocation] = useState("Hamburg");
+  const [timeoutID, setTimeoutID] = useState("");
 
   // useEffect(() => {
   //   function fetchLocation(location) {
