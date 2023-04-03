@@ -26,7 +26,7 @@ export default function Today() {
 
         <div className="weather-data">
           <div className="weather-feel">
-            <Icon className="weather-icon" path={mdiWeatherSunsetUp} size={1} />
+            {/* <Icon className="weather-icon" path={mdiWeatherSunsetUp} size={1} /> */}
             <span className="weather-data-text">
               {/* {stats.feel} */}
               Real Feel
@@ -34,11 +34,11 @@ export default function Today() {
           </div>
 
           <div className="weather-humidity">
-            <Icon
+            {/* <Icon
               className="weather-icon"
               path={mdiWeatherSunsetDown}
               size={1}
-            />
+            /> */}
             <span className="weather-data-text">
               {/* {stats.humidity} */}
               Humidity
@@ -49,7 +49,7 @@ export default function Today() {
 
       <div className="weather-info">
         <div className="weather-info-item">
-          <Icon className="weather-icon" path={mdiWeatherSunsetUp} size={1} />
+          {/* <Icon className="weather-icon" path={mdiWeatherSunsetUp} size={1} /> */}
           <span className="weather-data-text">
             {/* {sunrise} */}
             Sunrise
@@ -57,7 +57,7 @@ export default function Today() {
         </div>
 
         <div className="weather-info-item">
-          <Icon className="weather-icon" path={mdiWeatherSunsetDown} size={1} />
+          {/* <Icon className="weather-icon" path={mdiWeatherSunsetDown} size={1} /> */}
           <span className="weather-data-text">
             {/* {sunset} */}
             Sunset
