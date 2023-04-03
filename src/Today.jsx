@@ -1,7 +1,7 @@
 import feel from "./assets/feel.png";
 import humidity from "./assets/humidity.png";
-import sunset from "./assets/sunset.png";
 import sunrise from "./assets/sunrise.png";
+import sunset from "./assets/sunset.png";
 
 export default function Today(props) {
   const { data } = props;
