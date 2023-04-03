@@ -21,10 +21,7 @@ export default function App() {
         });
     }
 
-    const timeout = setTimeout(() => fetchLocation(location), 1000);
-
-    setTimeoutID(timeout);
-
+    setTimeoutID(setTimeout(() => fetchLocation(location), 1000));
     return () => {
       clearTimeout(timeoutID);
     };
