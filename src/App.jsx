@@ -34,7 +34,7 @@ export default function App() {
   ));
 
   return (
-    <div className="main">
+    <div className="mx-auto m-10 px-10 py-10 w-16 bg-gradient-to-r from-cyan-500 to-blue-900 opacity-90 backdrop-blur-xl flex flex-col items-center text-white shadow-2xl rounded-lg">
       <Location location={location} handleChange={handleInput} data={data} />
       <div className="today-and-forecast">
         <Today data={data} />
